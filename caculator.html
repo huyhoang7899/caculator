@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+    <form>
+        <input type="number" name="a" >
+        <input type="number" name="b" >
+
+    <br>
+    <button type="button" onclick="Addition(this.form)">Addition(+)</button>
+    <button type="button" onclick="Subtraction(this.form)">Subtraction(-)</button>
+    <button type="button" onclick="Multiplication(this.form)">Multiplication(*)</button>
+    <button type="button" onclick="Division(this.form)">Division(/)</button>
+    <P>
+    Result Division : <input type="number" name="ans" >
+    </form>
+<script>
+
+    function Addition(form) {
+        a=eval(form.a.value)
+        b=eval(form.b.value)
+        c=a+b
+        form.ans.value = c
+    }
+    function Subtraction(form) {
+        a=eval(form.a.value)
+        b=eval(form.b.value)
+        c=a-b
+        form.ans.value=c
+    }
+    function Multiplication(form) {
+        a=eval(form.a.value)
+        b=eval(form.b.value)
+        c=a*b
+        form.ans.value=c
+    }
+    function Division(form) {
+        a=eval(form.a.value)
+        b=eval(form.b.value)
+        c=a/b
+        form.ans.value = c
+    }
+
+</script>
+</body>
+</html>
